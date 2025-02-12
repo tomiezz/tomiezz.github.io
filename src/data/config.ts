@@ -1,5 +1,5 @@
 const config = {
-  title: "Hiep Nguyen | Senior WEb Developer",
+  title: "Hiep Nguyen | Senior Web Developer",
   description: {
     long: "Explore the portfolio of Hiep, a Senior Web Developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
     short:

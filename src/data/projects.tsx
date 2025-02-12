@@ -259,7 +259,6 @@ const projects: Project[] = [
       ],
     },
     live: "https://www.codingducks.xyz/",
-    github: "https://github.com/Naresh-Khatri/Coding-Ducks",
     get content() {
       return (
         <div>
@@ -407,13 +406,13 @@ const projects: Project[] = [
             ]}
           />
           <p className="font-mono mb-2 mt-5">
-            Plus, I&apos;ve sprinkled in some extra magic like personalized
-            deal recommendations, user-friendly search features, and a sleek,
+            Plus, I&apos;ve sprinkled in some extra magic like personalized deal
+            recommendations, user-friendly search features, and a sleek,
             responsive design that works like a charm on any device.
           </p>
           <p className="font-mono mb-2">
-            CouponLuxury isn&apos;t just a website; it&apos;s your personal deal-hunting
-            assistant, ensuring you never miss out on a bargain!
+            CouponLuxury isn&apos;t just a website; it&apos;s your personal
+            deal-hunting assistant, ensuring you never miss out on a bargain!
           </p>
           {/* <TypographyP className="my-4 mt-8">
           <strong>Misc:</strong>
@@ -462,8 +461,8 @@ const projects: Project[] = [
           <TypographyH3 className="my-4 mt-8">Blogs</TypographyH3>
           <p className="font-mono mb-2">
             Dive into the curated articles written by travel experts. Whether
-            you&apos;re looking for hidden gems or travel hacks, our blog section has
-            you covered.
+            you&apos;re looking for hidden gems or travel hacks, our blog
+            section has you covered.
           </p>
           <SlideShow
             images={[
@@ -474,8 +473,8 @@ const projects: Project[] = [
           <TypographyH3 className="my-4 mt-8">Sanity CMS</TypographyH3>
 
           <p className="font-mono mb-2">
-            Keeping everything fresh and up-to-date, I&apos;ve integrated Sanity CMS
-            to manage all the content with ease, ensuring you always get the
+            Keeping everything fresh and up-to-date, I&apos;ve integrated Sanity
+            CMS to manage all the content with ease, ensuring you always get the
             latest and greatest information.
           </p>
           <SlideShow
@@ -485,10 +484,11 @@ const projects: Project[] = [
             ]}
           />
           <p className="font-mono mb-2 my-8">
-            With a stunning 100% score on Lighthouse, The Booking Desk isn&apos;t
-            just beautiful—it&apos;s built to perform. Whether you&apos;re planning your
-            next adventure or just daydreaming, our site delivers a top-notch
-            experience that&apos;s both informative and enjoyable.
+            With a stunning 100% score on Lighthouse, The Booking Desk
+            isn&apos;t just beautiful—it&apos;s built to perform. Whether
+            you&apos;re planning your next adventure or just daydreaming, our
+            site delivers a top-notch experience that&apos;s both informative
+            and enjoyable.
           </p>
         </div>
       );
@@ -501,7 +501,6 @@ const projects: Project[] = [
     src: "/assets/projects-screenshots/ghostchat/1.png",
     screenshots: ["1.png", "2.png", "3.png", "4.png"],
     live: "https://ghostchat.vercel.app",
-    github:"https://github.com/Naresh-Khatri/GhostChat",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.chakra],
       backend: [PROJECT_SKILLS.supabase],
@@ -511,11 +510,11 @@ const projects: Project[] = [
         <div>
           <TypographyP className="font-mono ">
             Ghostchat is your go-to spot for sending anonymous messages without
-            leaving a trace. Powered by Supabase, it&apos;s all about keeping things
-            low-key and secure. Whether you&apos;re sharing secrets, giving feedback,
-            or just having some fun, Ghostchat ensures your identity stays
-            hidden, while your voice is heard. Say what you want, without the
-            worry.
+            leaving a trace. Powered by Supabase, it&apos;s all about keeping
+            things low-key and secure. Whether you&apos;re sharing secrets,
+            giving feedback, or just having some fun, Ghostchat ensures your
+            identity stays hidden, while your voice is heard. Say what you want,
+            without the worry.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -531,14 +530,18 @@ const projects: Project[] = [
     },
   },
   {
-    id: "jra",
-    category: "Result analyzer",
-    title: "JNTUA Results Analyzer",
-    src: "/assets/projects-screenshots/jra/1.png",
+    id: "Locali",
+    category: "Google Map/Mapbox",
+    title: "Locali",
+    src: "/assets/projects-screenshots/locali/1.png",
     screenshots: ["1.png"],
-    live: "https://naresh-khatri.github.io/JNTUA-result-analyser-spa/#/",
+    live: "https://location-distance-nine.vercel.app/",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.vue],
+      frontend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.tailwind,
+      ],
       backend: [
         PROJECT_SKILLS.node,
         PROJECT_SKILLS.mongo,
@@ -550,81 +553,60 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            JNTUA Results Analyzer was a revolutionary tool designed to simplify
-            and enhance the experience of accessing academic results. It served
-            as a powerful proxy between the JNTUA university results website and
-            its users, offering a range of features that made result analysis
-            faster and more efficient. Here&apos;s what made it stand out:
+            Locali was a project that helps users can get the places nearby
+            their location and provide distance and estimated time.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow images={[`${BASE_PATH}/jra/1.png`]} />
+          <SlideShow images={[`${BASE_PATH}/locali/1.png`]} />
           <TypographyH3 className="my-4 mt-8">
-            Effortless Results Retrieval
+            Easy to use, fast, and efficient, Locali was designed to make your
+            life easier.
           </TypographyH3>
           {/* Effortless Results Retrieval: */}
           <ul className="list-disc ml-6">
             <li className="font-mono">
-              Search all your results using a single roll number, eliminating
-              the tedious task of sifting through thousands of rows on the
-              official site.
+              Search all your places using Mapbox and GoogleMap.
             </li>
           </ul>
-          <TypographyH3 className="my-4 mt-8">Class-Wise Results:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              class-wise results effortlessly by entering a roll number range.
-              No more manual searches or filtering.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Faculty Features:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Faculty members could download batch results in Excel format,
-              making administrative tasks a breeze.
-            </li>
-          </ul>
+        </div>
+      );
+    },
+  },
+  {
+    id: "Fl4k",
+    category: "ELearning Platform/Contentful CMS",
+    title: "Fl4k",
+    src: "/assets/projects-screenshots/fl4k/1.png",
+    screenshots: ["1.png"],
+    live: "https://www.fl4k.com/",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.chakra,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.mongo,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            Fl4k is a project that helps users learn Spanish.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <SlideShow images={[`${BASE_PATH}/fl4k/1.png`]} />
           <TypographyH3 className="my-4 mt-8">
-            Enhanced Data Insights:
+            Learn and practice Spanish with the platform and purchase gorgeous Spanish materials to help you learn.
           </TypographyH3>
+          {/* Effortless Results Retrieval: */}
           <ul className="list-disc ml-6">
             <li className="font-mono">
-              Each result came with additional features including:
-              <ul className="list-disc font-mono ml-6">
-                <li>
-                  <strong>CGPA Calculations: </strong>Easily track your
-                  cumulative grade point average.
-                </li>
-                <li>
-                  <strong>Charts:</strong> Visualize your academic performance
-                  with comprehensive charts.
-                </li>
-                <li>
-                  <strong>Future Projections:</strong> Get insights into
-                  potential future outcomes based on current performance.
-                </li>
-                <li>
-                  <strong> Backlog Counts: </strong>Keep track of your backlog
-                  subjects at a glance.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Performance:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              The application was significantly faster and more efficient than
-              the official site, providing a smoother user experience.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Downfall:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Unfortunately, as of May 2022, the tool stopped working due to the
-              introduction of CAPTCHA on the official JNTUA results site, which
-              disrupted the seamless functionality of the app. JNTUA Results
-              Analyzer transformed the way students and faculty interacted with
-              academic results, making it a must-have tool until its unexpected
-              shutdown.
+              Manage contents easily with Contenful
             </li>
           </ul>
         </div>
