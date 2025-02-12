@@ -14,21 +14,6 @@ const BUTTONS = [
     href: config.social.github,
     icon: <SiGithub size={"24"} color={"#fff"} />,
   },
-  {
-    name: "LinkedIn",
-    href: config.social.linkedin,
-    icon: <SiLinkedin size={"24"} color={"#fff"} />,
-  },
-  {
-    name: "Twitter",
-    href: config.social.twitter,
-    icon: <SiTwitter size={"24"} color={"#fff"} />,
-  },
-  {
-    name: "Instagram",
-    href: config.social.instagram,
-    icon: <SiInstagram size={"24"} color={"#fff"} />,
-  },
 ];
 
 const SocialMediaButtons = () => {
